@@ -24,7 +24,9 @@ app.use("/auth", require("./routers/authRouter"));
 app.use("/user", require("./routers/userRouter"));
 app.use("/bank", require("./routers/bankRouter"));
 app.use("/camps", require("./routers/campRouter"));
-
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+  });
 app.listen(port, () =>
 	console.log(`Server running at http://localhost:${port}`)
 );
