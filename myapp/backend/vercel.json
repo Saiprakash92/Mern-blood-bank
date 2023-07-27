@@ -1,0 +1,16 @@
+{
+    "version" :2,
+      "name" : "rakt-dhara",
+      "builds" : [
+        {
+          "src" : "./app.js",
+          "use" : "@vercel/node"
+        }
+      ],
+      "routes" : [
+        {
+          "src" : "/(.*)",
+          "dest" : "/"
+        }
+      ]
+    }
